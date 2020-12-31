@@ -15,5 +15,5 @@ public class VARIABLES {
     //Memoria dos programas a correr
     static String HRSWRUNPERFMEM = ".1.3.6.1.2.1.25.5.1.1.2";
     //Tempo de pulling em segundos
-    static int PULLINGTIME = 60;
+    static int PULLINGTIME = 10;
 }

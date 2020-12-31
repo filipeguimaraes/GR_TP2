@@ -1,71 +1,68 @@
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
 public class Monitorization {
 
-    final int pulling;
-    final String pathToLog;
+    private static Monitorization instance = null;
+    private Thread thread;
     private final String address;
     private final String port;
+    private int pulling;
     private TextArea textArea;
+    private boolean running = true;
 
-    public Monitorization(String address, String port, String pathToLog, TextArea textArea) {
+    public Monitorization(String address, String port, TextArea textArea) {
         this.textArea = textArea;
         this.pulling = VARIABLES.PULLINGTIME;
-        this.pathToLog = pathToLog;
         this.address = address;
         this.port = port;
     }
 
-    public static void main(String[] args)
-            throws IOException, InterruptedException {
-        Monitorization monitor = new Monitorization(
-                "127.0.0.1",
-                "161",
-                "log.txt",
-                null);
-        monitor.start();
-    }
-
     public void start() throws IOException, InterruptedException {
-        //Log log = new Log(pathToLog);
-        //log.append("teste");
+        Log log = new Log();
+
         if (address == null || port == null) {
             throw new IOException("Endereço ou porta não indicados!");
         }
-        Client client = new Client(this.address + "/" + this.port);
-        try {
-            println(getUptime(client));
-            println(getDate(client).toString());
-            String sysDescr = client.getString(VARIABLES.SYSDESCR);
-            println(sysDescr);
-            Map<Integer, Process> processos = getProcesses(client);
+        thread = new Thread(() -> {
+            while (running) {
+                try {
+                    Client client = new Client(this.address + "/" + this.port);
 
-            for (Process p : processos.values()) {
-                println(p.toString());
+                    log.append(getUptime(client));
+                    String sysDescr = String.format("{ \"sysINFO\" = \"%s\" }", client.getString(VARIABLES.SYSDESCR));
+                    log.append(sysDescr);
+                    Map<Integer, Process> processos = getProcesses(client);
+
+                    for (Process p : processos.values()) {
+                        log.append(p.toString());
+                    }
+                    client.stop();
+                    textArea.setText(textArea.getText() +this.address+'\\'+this.port+":Escrita no log\n");
+                    Thread.sleep(pulling * 1000L);
+                } catch (Exception e) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText(e.getMessage());
+                    alert.showAndWait();
+                }
             }
-        } finally {
-            client.stop();
-        }
+        });
+        thread.start();
+
     }
 
+    public void stop(){
+        running = false;
+    }
 
     public String getUptime(Client client) throws IOException {
-        return String.format("{\"uptime\" = \"%s\" }",
+        return String.format("{ \"uptime\" = \"%s\" }",
                 client.getString(VARIABLES.HRSYSTEMUPTIME));
     }
 
-    public LocalDateTime getDate(Client client) throws IOException {
-        String datetime = client.getOctecString(VARIABLES.HRSYSTEMDATE);
-        println(datetime);
-        String formater = "yyyy-MM-dd','hh:mm:ss'.'S','Z";
-
-        return LocalDateTime.parse(datetime, DateTimeFormatter.ofPattern(formater));
-    }
 
     public Map<Integer, Process> getProcesses(Client client) throws IOException {
         Map<Integer, Process> processos = client.getName(VARIABLES.HRSWRUNNAME);
@@ -74,10 +71,5 @@ public class Monitorization {
         return processos;
     }
 
-    public void println(String text) {
-        if (textArea == null) {
-            System.out.println(text);
-        } else textArea.setText(textArea.getText() + text + '\n');
-    }
 
 }

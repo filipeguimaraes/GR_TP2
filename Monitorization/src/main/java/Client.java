@@ -51,20 +51,7 @@ public class Client {
         return event.getResponse().get(0).getVariable().toString();
     }
 
-    public String getOctecString(String oid) throws IOException {
-        PDU pdu = new PDU();
-        pdu.add(new VariableBinding(new OID(oid)));
-        pdu.setType(PDU.GET);
 
-        ResponseEvent event = snmp.send(pdu, getTarget(), null);
-        if (event == null) {
-            throw new RuntimeException("Nenhum evento");
-        }
-
-        return event.getResponse().get(0).toValueString();
-    }
-
-    
     private Target getTarget() {
         Address targetAddress = GenericAddress.parse(address);
         CommunityTarget target = new CommunityTarget(targetAddress, new OctetString("gr2020"));
