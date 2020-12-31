@@ -1,7 +1,5 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME;
@@ -13,34 +11,30 @@ public class Log {
 
     final String path;
     final File file;
+    private DataOutputStream dataOutputStream;
 
-    public Log() {
+    public Log() throws IOException {
         this.path = "log_" + LocalDateTime.now().format(ISO_LOCAL_DATE_TIME) + ".txt";
         this.file = new File(path);
-        try {
-            //Criar ficheiro
-            //noinspection ResultOfMethodCallIgnored
-            this.file.createNewFile();
-        } catch (IOException ignored) {
-        }
-        //obrigar o ficheiro a ser criado
+
+        //Criar ficheiro
         //noinspection ResultOfMethodCallIgnored
-        file.canWrite();
+        this.file.createNewFile();
+
+    }
+
+    public void open() throws FileNotFoundException {
+        dataOutputStream = new DataOutputStream(new FileOutputStream(file,true));
     }
 
 
     public void append(String text) throws IOException {
-        FileWriter fr = new FileWriter(this.file, true);
-        BufferedWriter br = new BufferedWriter(fr);
-        br.write(text+'\n');
-        br.flush();
-        fr.flush();
-        br.close();
-        fr.close();
-
-        //noinspection ResultOfMethodCallIgnored
-        this.file.canWrite();
+        dataOutputStream.write((text+'\n').getBytes(StandardCharsets.UTF_8));
+        dataOutputStream.flush();
     }
 
+    public void close() throws IOException {
+        this.dataOutputStream.close();
+    }
 
 }

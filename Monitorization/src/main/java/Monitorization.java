@@ -31,7 +31,7 @@ public class Monitorization {
             while (running) {
                 try {
                     Client client = new Client(this.address + "/" + this.port);
-
+                    log.open();
                     log.append(getUptime(client));
                     String sysDescr = String.format("{ \"sysINFO\" = \"%s\" }", client.getString(VARIABLES.SYSDESCR));
                     log.append(sysDescr);
@@ -40,6 +40,7 @@ public class Monitorization {
                     for (Process p : processos.values()) {
                         log.append(p.toString());
                     }
+                    log.close();
                     client.stop();
                     textArea.setText(textArea.getText() +this.address+'\\'+this.port+":Escrita no log\n");
                     Thread.sleep(pulling * 1000L);
