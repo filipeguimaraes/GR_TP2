@@ -15,7 +15,7 @@ public class MainFX extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setTitle("Media Center");
+        stage.setTitle("Monitoring");
         Image image = new Image("/images/icon.png");
         stage.getIcons().add(image);
         Scene start = new Scene(FXMLLoader.load(getClass().getResource("ui.fxml")));

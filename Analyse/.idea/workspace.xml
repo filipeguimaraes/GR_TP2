@@ -5,27 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83cc035-b517-4d57-af77-ea6bdd902a21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/Monitorization.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/Monitorization.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Monitorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/UIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/VARIABLES.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/sheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Analyse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -39,9 +41,30 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/images" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d83cc035-b517-4d57-af77-ea6bdd902a21" name="Default Changelist" comment="" />
@@ -50,7 +73,11 @@
       <option name="presentableId" value="Default" />
       <updated>1609194690476</updated>
       <workItem from="1609194691641" duration="1000" />
+      <workItem from="1609448156414" duration="3169000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
