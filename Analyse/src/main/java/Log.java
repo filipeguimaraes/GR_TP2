@@ -24,15 +24,14 @@ public class Log {
     }
 
 
-    public void read() throws IOException, InterruptedException {
+    public void read(Agregador agregador) throws IOException, InterruptedException {
         String line = null;
         while (true) {
             line = br.readLine();
             if (line == null) {
-                //wait until there is more of the file for us to read
                 Thread.sleep(1000);
             } else {
-                System.out.println(line);
+
             }
         }
     }

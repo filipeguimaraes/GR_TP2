@@ -6,8 +6,8 @@ import org.snmp4j.smi.OID;
 public class Process {
     private final Integer pid;
     private final String name;
-    private Integer mem;
-    private Integer cpu;
+    private float mem;
+    private float cpu;
     
 
     public Process(OID oid_pid, String name) {
@@ -15,8 +15,10 @@ public class Process {
         this.name = name;
     }
 
-    public void setMem(Integer mem) {
-        this.mem = mem;
+    public void setMem(Integer mem, Integer totalMemory) {
+        float memory = (float) mem;
+        float total = (float) totalMemory;
+        this.mem = memory/total*100;
     }
 
     public void setCpu(Integer cpu) {
@@ -25,7 +27,7 @@ public class Process {
 
     @Override
     public String toString() {
-        return "{ "+pid+":{" +
+        return "{ \"process\" {" +
                 "\"pid\":" + pid +
                 ", \"name\":\"" + name + '\"' +
                 ", \"mem\":" + mem +

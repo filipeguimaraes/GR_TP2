@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox prefHeight="144.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="updateController">
+   <children>
+      <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="296.0">
+         <children>
+            <Region layoutX="10.0" layoutY="110.0" prefHeight="200.0" prefWidth="250.0" VBox.vgrow="ALWAYS" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Polling Time" />
+            <HBox>
+               <children>
+                  <TextField fx:id="time" promptText="time" text="60" />
+                  <Region prefHeight="26.0" prefWidth="44.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="apply" mnemonicParsing="false" onAction="#applyTime" prefHeight="26.0" prefWidth="106.0" text="Apply" />
+               </children>
+            </HBox>
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <Region layoutX="520.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

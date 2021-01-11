@@ -1,8 +1,12 @@
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws IOException, InterruptedException {
         //MainFX.main(args);
-
-        New
+        Log log = new Log("log.txt");
+        log.open();
+        Agregador agregador = new Agregador();
+        log.read(agregador);
     }
 }

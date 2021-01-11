@@ -21,13 +21,14 @@ import java.util.TreeMap;
 public class Client {
 
     private final String address;
-
+    private String community;
     private Snmp snmp;
 
 
-    public Client(String address) throws IOException {
+    public Client(String address,String community) throws IOException {
         super();
         this.address = address;
+        this.community = community;
         start();
     }
 
@@ -54,7 +55,7 @@ public class Client {
 
     private Target getTarget() {
         Address targetAddress = GenericAddress.parse(address);
-        CommunityTarget target = new CommunityTarget(targetAddress, new OctetString("gr2020"));
+        CommunityTarget target = new CommunityTarget(targetAddress, new OctetString(this.community));
         target.setRetries(2);
         target.setTimeout(1500);
         target.setVersion(SnmpConstants.version2c);
@@ -73,11 +74,12 @@ public class Client {
      */
     public Map<Integer, Process> getName(String OID) throws IOException {
         List<TreeEvent> eventos = getColumn(OID);
-        Map<Integer, Process> processos = new TreeMap<>();
+
         if (eventos == null || eventos.isEmpty()) {
             throw new IOException("Não conseguiu aceder ao valor solicitado");
         }
 
+        Map<Integer, Process> processos = new TreeMap<>();
         for (TreeEvent event : eventos) {
             if (event != null) {
                 VariableBinding[] varBindings = event.getVariableBindings();
@@ -98,7 +100,7 @@ public class Client {
     /*
      * Método que adiciona a memoria de cada processo
      */
-    public void getMem(String OID, Map<Integer, Process> processos) throws IOException {
+    public void getMem(String OID, Map<Integer, Process> processos, Integer totalMemory) throws IOException {
         List<TreeEvent> eventos = getColumn(OID);
         if (eventos == null || eventos.isEmpty()) {
             throw new IOException("Erro ao carregar a memória");
@@ -113,7 +115,7 @@ public class Client {
                 for (VariableBinding varBinding : varBindings) {
                     if (varBinding != null) {
                         processos.get(varBinding.getOid().last())
-                                .setMem(varBinding.getVariable().toInt());
+                                .setMem(varBinding.getVariable().toInt(),totalMemory);
                     }
                 }
             }

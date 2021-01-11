@@ -1,5 +1,7 @@
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
 
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME;
@@ -13,8 +15,10 @@ public class Log {
     final File file;
     private DataOutputStream dataOutputStream;
 
-    public Log() throws IOException {
-        this.path = "log_" + LocalDateTime.now().format(ISO_LOCAL_DATE_TIME) + ".txt";
+    public Log(String address,String port) throws IOException {
+        Path currentRelativePath = Paths.get("");
+        String relativepath = currentRelativePath.toAbsolutePath().toString();
+        this.path = relativepath+"/log::"+address+":"+port+"::"+LocalDateTime.now().format(ISO_LOCAL_DATE_TIME)+".txt";
         this.file = new File(path);
 
         //Criar ficheiro

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -10,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController">
    <children>
       <Region prefHeight="134.0" prefWidth="429.0" />
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
@@ -34,17 +35,27 @@
                   <TextField fx:id="address" promptText="IP ADDRESS" text="127.0.0.1" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UDP Port:" />
                   <TextField fx:id="port" promptText="UDP PORT" text="161" />
+                  <Text layoutX="10.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Community:" />
+                  <TextField fx:id="community" layoutX="10.0" layoutY="68.0" promptText="Community" text="gr2020" />
                </children>
             </VBox>
             <Region prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
-      <Region layoutX="10.0" layoutY="187.0" prefHeight="121.0" prefWidth="429.0" />
+      <Region layoutX="10.0" layoutY="187.0" prefHeight="136.0" prefWidth="429.0" />
       <HBox layoutX="10.0" layoutY="212.0" prefHeight="39.0" prefWidth="373.0" VBox.vgrow="ALWAYS">
          <children>
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-            <Button fx:id="start" mnemonicParsing="false" onAction="#startMonitoring" prefHeight="26.0" prefWidth="211.0" text="Start Monitoring" />
-            <Region layoutX="224.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="start" mnemonicParsing="false" onAction="#startMonitoring" prefHeight="26.0" prefWidth="256.0" text="Start Monitoring">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Region layoutX="224.0" layoutY="10.0" prefHeight="26.0" prefWidth="159.0" />
+            <Button fx:id="stop" layoutX="149.0" layoutY="10.0" mnemonicParsing="false" onAction="#stopMonitoring" prefHeight="26.0" prefWidth="256.0" text="Stop Monitoring" HBox.hgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Region layoutX="225.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
       <Region layoutX="10.0" layoutY="273.0" prefHeight="123.0" prefWidth="429.0" />
@@ -67,6 +78,21 @@
          </children>
       </HBox>
       <Region layoutX="10.0" layoutY="321.0" prefHeight="131.0" prefWidth="429.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <ImageView fx:id="settings" fitHeight="33.0" fitWidth="30.0" onMouseClicked="#changeSettings" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/settings.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region prefHeight="148.0" prefWidth="429.0" />
       <HBox prefHeight="52.0" prefWidth="429.0" VBox.vgrow="ALWAYS">
          <children>
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
@@ -80,7 +106,7 @@
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
-      <TextArea fx:id="text" editable="false" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="text" editable="false" prefHeight="195.0" prefWidth="429.0" />
       <Region layoutX="10.0" layoutY="388.0" prefHeight="25.0" prefWidth="373.0" />
    </children>
 </VBox>

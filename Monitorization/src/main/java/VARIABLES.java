@@ -3,7 +3,7 @@
 * */
 public class VARIABLES {
     //System Description
-    static String SYSDESCR = ".1.3.6.1.2.1.1.1.0";
+    //static String SYSDESCR = ".1.3.6.1.2.1.1.1.0";
     //System Description
     static String HRSYSTEMUPTIME = ".1.3.6.1.2.1.25.1.1.0";
     //System Description
@@ -14,6 +14,6 @@ public class VARIABLES {
     static String HRSWRUNPERFCPU = ".1.3.6.1.2.1.25.5.1.1.1";
     //Memoria dos programas a correr
     static String HRSWRUNPERFMEM = ".1.3.6.1.2.1.25.5.1.1.2";
-    //Tempo de pulling em segundos
-    static int PULLINGTIME = 10;
+    //Momoria RAM total
+    static String HRMEMORYSIZE = ".1.3.6.1.2.1.25.2.2.0";
 }

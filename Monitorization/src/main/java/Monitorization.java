@@ -2,39 +2,48 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Monitorization {
 
     private static Monitorization instance = null;
-    private Thread thread;
-    private final String address;
-    private final String port;
+
+    //(address+":"+port,thread)
+    private Map<String, Thread> threads;
     private int pulling;
-    private TextArea textArea;
     private boolean running = true;
 
-    public Monitorization(String address, String port, TextArea textArea) {
-        this.textArea = textArea;
-        this.pulling = VARIABLES.PULLINGTIME;
-        this.address = address;
-        this.port = port;
+    private Monitorization() {
+        this.threads = new HashMap<>();
+        this.pulling = 5;
     }
 
-    public void start() throws IOException, InterruptedException {
-        Log log = new Log();
+    public void changePulling(int time){
+        this.pulling = time;
+    }
 
+    public static Monitorization getInstance() {
+        if (Monitorization.instance == null) {
+            Monitorization.instance = new Monitorization();
+        }
+        return Monitorization.instance;
+    }
+
+    public void start(String address, String port,String community, TextArea textArea) throws IOException {
         if (address == null || port == null) {
             throw new IOException("Endereço ou porta não indicados!");
         }
-        thread = new Thread(() -> {
+        Log log = new Log(address, port);
+
+        Thread thread = new Thread(() -> {
             while (running) {
                 try {
-                    Client client = new Client(this.address + "/" + this.port);
+                    Client client = new Client(address + "/" + port,community);
                     log.open();
                     log.append(getUptime(client));
-                    String sysDescr = String.format("{ \"sysINFO\" = \"%s\" }", client.getString(VARIABLES.SYSDESCR));
-                    log.append(sysDescr);
+                    //String sysDescr = String.format("{ \"sysINFO\" = \"%s\" }", client.getString(VARIABLES.SYSDESCR));
+                    //log.append(sysDescr);
                     Map<Integer, Process> processos = getProcesses(client);
 
                     for (Process p : processos.values()) {
@@ -42,20 +51,34 @@ public class Monitorization {
                     }
                     log.close();
                     client.stop();
-                    textArea.setText(textArea.getText() +this.address+'\\'+this.port+":Escrita no log\n");
+                    textArea.setText(textArea.getText() + address + '\\' + port + ":Escrita no log\n");
                     Thread.sleep(pulling * 1000L);
-                } catch (Exception e) {
+                } catch (IOException e) {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setContentText(e.getMessage());
                     alert.showAndWait();
+                } catch (InterruptedException e) {
+                    printText("Stoping monotoring Address: " + address + "/" + port+"...", textArea);
+                    try {
+                        Thread.currentThread().join();
+                    } catch (InterruptedException interruptedException) {
+                        printText("Stop monotoring Address: " + address + "/" + port+"...", textArea);
+                    }
                 }
             }
         });
+        threads.put(address + ":" + port, thread);
         thread.start();
 
     }
 
-    public void stop(){
+
+    public void join(String address, String port, TextArea textArea) {
+        this.threads.get(address + ":" + port).interrupt();
+
+    }
+
+    public void stop() {
         running = false;
     }
 
@@ -66,10 +89,15 @@ public class Monitorization {
 
 
     public Map<Integer, Process> getProcesses(Client client) throws IOException {
+        Integer totalMemory = Integer.parseInt(client.getString(VARIABLES.HRMEMORYSIZE));
         Map<Integer, Process> processos = client.getName(VARIABLES.HRSWRUNNAME);
-        client.getMem(VARIABLES.HRSWRUNPERFMEM, processos);
+        client.getMem(VARIABLES.HRSWRUNPERFMEM, processos,totalMemory);
         client.getCPU(VARIABLES.HRSWRUNPERFCPU, processos);
         return processos;
+    }
+
+    public void printText(String text, TextArea textArea) {
+        textArea.setText(textArea.getText() + text + '\n');
     }
 
 
