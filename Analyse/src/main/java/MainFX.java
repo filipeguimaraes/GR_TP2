@@ -15,10 +15,10 @@ public class MainFX extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setTitle("\"htop\"");
+        stage.setTitle("\"mytop\"");
         Image image = new Image("/images/icon.png");
         stage.getIcons().add(image);
-        Scene start = new Scene(FXMLLoader.load(getClass().getResource("ui.fxml")));
+        Scene start = new Scene(FXMLLoader.load(getClass().getResource("inicio.fxml")));
         stage.setScene(start);
         stage.centerOnScreen();
         stage.show();

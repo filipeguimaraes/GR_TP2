@@ -140,7 +140,7 @@ public class Client {
                 for (VariableBinding varBinding : varBindings) {
                     if (varBinding != null) {
                         processos.get(varBinding.getOid().last())
-                                .setCpu(varBinding.getVariable().toInt());
+                                .setCenticeconds(varBinding.getVariable().toInt());
                     }
                 }
             }
