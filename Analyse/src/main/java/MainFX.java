@@ -18,7 +18,8 @@ public class MainFX extends Application {
         stage.setTitle("\"mytop\"");
         Image image = new Image("/images/icon.png");
         stage.getIcons().add(image);
-        Scene start = new Scene(FXMLLoader.load(getClass().getResource("inicio.fxml")));
+        Scene start = new Scene(FXMLLoader.load(getClass().getResource("monitor.fxml")));
+        start.getStylesheets().add("material.css");
         stage.setScene(start);
         stage.centerOnScreen();
         stage.show();

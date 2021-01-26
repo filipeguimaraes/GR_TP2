@@ -1,9 +1,6 @@
 package Model;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /*
  * Class para ler do log
@@ -13,8 +10,8 @@ public class Log {
     final String path;
     private BufferedReader br;
 
-    public Log(String path) {
-        this.path = path;
+    public Log(File file) {
+        this.path = file.getPath();
     }
 
     public void open() throws FileNotFoundException {

@@ -61,6 +61,7 @@ public class UIController {
         fxmlLoader.setLocation(getClass().getResource("update.fxml"));
         Scene scene = null;
         scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add("material.css");
         Stage stage = new Stage();
         stage.setTitle("Settings");
         stage.setScene(scene);

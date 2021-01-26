@@ -5,53 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83cc035-b517-4d57-af77-ea6bdd902a21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/Inicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/Monitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Tradutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/inicio.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/monitor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/material.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agregador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Analyse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Instancia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Monitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Process.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agregador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Analyse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Instancia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/monitor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/monitor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/monitor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/monitor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/Inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/Inicio.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainFX$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFX$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Process.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Monitorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Monitorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/Monitorization-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/Monitorization-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Agregador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Agregador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-23T15:19:44.338840566.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-25T14:48:27.917452274.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/UIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/UIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/sheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/update.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/update.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Monitorization.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Monitorization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Process.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/UIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/UIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/VARIABLES.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/VARIABLES.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/updateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/updateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/sheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/update.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/update.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,13 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,7 +133,10 @@
       <workItem from="1611427814658" duration="1647000" />
       <workItem from="1611508605039" duration="687000" />
       <workItem from="1611509317583" duration="28000" />
-      <workItem from="1611585698139" duration="21638000" />
+      <workItem from="1611585698139" duration="29677000" />
+      <workItem from="1611685487802" duration="56000" />
+      <workItem from="1611685656486" duration="14000" />
+      <workItem from="1611686709769" duration="2526000" />
     </task>
     <servers />
   </component>
