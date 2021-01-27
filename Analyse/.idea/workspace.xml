@@ -5,37 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83cc035-b517-4d57-af77-ea6bdd902a21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/material.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/Mem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Inicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Monitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/monitor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/monitor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cpu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cpu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/inicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/monitor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/monitor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mem.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controllers/Inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/Inicio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFX$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFX$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Agregador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Agregador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Estado.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/inicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-23T15:19:44.338840566.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-25T14:48:27.917452274.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/UIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/UIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/sheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/ui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/update.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/update.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/UIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/UIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/sheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/ui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/update.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/update.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-26T20:52:55.952524457.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/Model" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -83,12 +63,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Model" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn javafx:run" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -136,7 +122,7 @@
       <workItem from="1611585698139" duration="29677000" />
       <workItem from="1611685487802" duration="56000" />
       <workItem from="1611685656486" duration="14000" />
-      <workItem from="1611686709769" duration="2526000" />
+      <workItem from="1611686709769" duration="11670000" />
     </task>
     <servers />
   </component>

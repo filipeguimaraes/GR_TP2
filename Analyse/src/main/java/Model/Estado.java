@@ -44,7 +44,15 @@ public class Estado {
 
     public void setCpuTotal() {
         for (Process p : this.processos) {
-            this.cpuTotal += p.getMem();
+            this.cpuTotal += p.getCpu();
         }
+    }
+
+    public Double getCpuTotal() {
+        return cpuTotal;
+    }
+
+    public Double getRamTotal() {
+        return ramTotal;
     }
 }
