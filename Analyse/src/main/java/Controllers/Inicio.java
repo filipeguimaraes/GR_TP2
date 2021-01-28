@@ -2,6 +2,7 @@ package Controllers;
 
 import Model.Agregador;
 import Model.Process;
+import eu.hansolo.medusa.Gauge;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,6 +14,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Stop;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,16 +34,22 @@ public class Inicio implements Initializable {
     private TableColumn<Process, Double> cpu;
     @FXML
     private TableColumn<Process, Double> ram;
+    @FXML
+    private Gauge cpuG;
+    @FXML
+    private Gauge ramG;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         startTable();
+        cpuG.setValue(Agregador.getInstance().getLastEstado().getCpuTotal());
+        ramG.setValue(Agregador.getInstance().getLastEstado().getRamTotal());
     }
 
     public void startTable() {
         Agregador ag = Agregador.getInstance();
-        ObservableList<Process> lista = FXCollections.observableArrayList(ag.getLastEstado().getProcessos());
+        ObservableList<Process> lista = ag.getLastProcesses();
 
         this.PID.setCellValueFactory(new PropertyValueFactory<>("pid"));
         this.name.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -97,5 +106,10 @@ public class Inicio implements Initializable {
 
         this.processTable.setItems(lista);
         this.processTable.refresh();
+    }
+
+    @FXML
+    void exitApp(MouseEvent event) {
+
     }
 }

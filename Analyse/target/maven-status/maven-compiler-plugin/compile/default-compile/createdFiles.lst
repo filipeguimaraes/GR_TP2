@@ -1,0 +1,12 @@
+Controllers/Mem.class
+MainFX.class
+Main.class
+Model/Process.class
+Model/Tradutor.class
+Controllers/Cpu.class
+Model/Estado.class
+Model/Agregador.class
+Model/Log.class
+Controllers/Monitor.class
+Controllers/Inicio.class
+MainFX$1.class

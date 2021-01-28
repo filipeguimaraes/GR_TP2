@@ -1,5 +1,8 @@
 package Model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
@@ -9,12 +12,13 @@ public class Agregador {
     private static Agregador instance = null;
     private final ReentrantLock lock;
     private List<Estado> estados;
-    private long refreshRate;
+    private Estado lastEstado;
+    private ObservableList<Process> lastProcesses;
 
     public Agregador() {
         this.estados = new ArrayList<>();
         this.lock = new ReentrantLock();
-        this.refreshRate = 30;
+        lastProcesses = FXCollections.observableArrayList(new ArrayList<>());
     }
 
     public static Agregador getInstance() {
@@ -33,15 +37,14 @@ public class Agregador {
         } finally {
             this.lock.unlock();
         }
+        System.out.println(estado.getUptime());
+        lastEstado = estado;
+        lastProcesses.removeAll();
+        lastProcesses.addAll(FXCollections.observableArrayList(lastEstado.getProcessos()));
     }
 
     public Estado getLastEstado() {
-        try {
-            this.lock.lock();
-            return estados.get(estados.size() - 1);
-        } finally {
-            this.lock.unlock();
-        }
+        return this.lastEstado;
     }
 
     public List<Estado> getEstados() {
@@ -53,11 +56,7 @@ public class Agregador {
         }
     }
 
-    public long getRefreshRate() {
-        return refreshRate;
-    }
-
-    public void setRefreshRate(int refreshRate) {
-        this.refreshRate = refreshRate;
+    public ObservableList<Process> getLastProcesses() {
+        return lastProcesses;
     }
 }

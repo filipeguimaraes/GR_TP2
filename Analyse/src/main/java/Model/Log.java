@@ -26,6 +26,7 @@ public class Log {
     public void read(Agregador agregador) throws IOException, InterruptedException {
         String line = null;
         Estado estado = new Estado();
+        int flag = 0;
         while (true) {
             line = br.readLine();
             if (line == null) {
