@@ -1,6 +1,5 @@
 package Controllers;
 
-import Model.Agregador;
 import Model.Log;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -30,23 +29,31 @@ public class Monitor {
         Stage thisStage = (Stage) node.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         File selectedFile = fileChooser.showOpenDialog(thisStage);
-        Log log = new Log(selectedFile);
-        try {
-            log.open();
-        } catch (FileNotFoundException e) {
+        if (selectedFile != null) {
+            Log log = new Log(selectedFile);
+            try {
+                log.open();
+            } catch (FileNotFoundException e) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText(e.getMessage());
+                alert.showAndWait();
+            }
+
+            new Thread(() -> {
+                try {
+                    log.init();
+                    log.read();
+                } catch (IOException | InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }).start();
+            file.setDisable(true);
+            start.setDisable(false);
+        } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText(e.getMessage());
+            alert.setContentText("Choose a valid file.");
             alert.showAndWait();
         }
-
-        new Thread(() -> {
-            try {
-                log.read(Agregador.getInstance());
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        start.setDisable(false);
     }
 
     @FXML

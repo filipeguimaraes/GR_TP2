@@ -11,9 +11,8 @@ public class Agregador {
 
     private static Agregador instance = null;
     private final ReentrantLock lock;
-    private List<Estado> estados;
-    private Estado lastEstado;
-    private ObservableList<Process> lastProcesses;
+    private final List<Estado> estados;
+    private final ObservableList<Process> lastProcesses;
 
     public Agregador() {
         this.estados = new ArrayList<>();
@@ -37,15 +36,11 @@ public class Agregador {
         } finally {
             this.lock.unlock();
         }
-        System.out.println(estado.getUptime());
-        lastEstado = estado;
-        lastProcesses.removeAll();
-        lastProcesses.addAll(FXCollections.observableArrayList(lastEstado.getProcessos()));
+
+        lastProcesses.clear();
+        lastProcesses.addAll(FXCollections.observableArrayList(estado.getProcessos()));
     }
 
-    public Estado getLastEstado() {
-        return this.lastEstado;
-    }
 
     public List<Estado> getEstados() {
         try {
@@ -58,5 +53,14 @@ public class Agregador {
 
     public ObservableList<Process> getLastProcesses() {
         return lastProcesses;
+    }
+
+
+    public Double getLastCPUTotal() {
+        return estados.get(estados.size()-1).getCpuTotal();
+    }
+
+    public Double getLastMEMTotal() {
+        return estados.get(estados.size()-1).getRamTotal();
     }
 }

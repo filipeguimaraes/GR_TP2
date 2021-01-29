@@ -48,14 +48,6 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </ImageView>
-                                <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true" styleClass="button-raised" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                                    <image>
-                                        <Image url="@images/refresh.png" />
-                                    </image>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </ImageView>
                                 <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#exitApp" pickOnBounds="true" preserveRatio="true" styleClass="button-raised" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                                     <image>
                                         <Image url="@images/exit.png" />
@@ -113,8 +105,8 @@
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
                                     </rowConstraints>
                                     <children>
-                                        <Gauge fx:id="cpuG" animated="true" areaTextVisible="true" lcdFont="ELEKTRA" skinType="TILE_KPI" unit="CPU (%)"/>
-                                        <Gauge fx:id="ramG" animated="true" areaTextVisible="true" lcdFont="ELEKTRA" skinType="TILE_KPI" unit="RAM (%)" GridPane.rowIndex="1"/>
+                                        <Gauge fx:id="cpuG" animated="true" areaTextVisible="true" lcdFont="ELEKTRA" skinType="TILE_KPI" unit="CPU (%)" />
+                                        <Gauge fx:id="ramG" animated="true" areaTextVisible="true" lcdFont="ELEKTRA" skinType="TILE_KPI" unit="RAM (%)" GridPane.rowIndex="1" />
                                     </children>
                                 </GridPane>
                             </children>

@@ -3,7 +3,9 @@ package Controllers;
 import Model.Agregador;
 import Model.Process;
 import eu.hansolo.medusa.Gauge;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,9 +44,11 @@ public class Inicio implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        cpuG.setValue(Agregador.getInstance().getLastCPUTotal());
+        cpuG.setAnimationDuration(1000);
+        ramG.setValue(Agregador.getInstance().getLastMEMTotal());
+        cpuG.setAnimationDuration(1000);
         startTable();
-        cpuG.setValue(Agregador.getInstance().getLastEstado().getCpuTotal());
-        ramG.setValue(Agregador.getInstance().getLastEstado().getRamTotal());
     }
 
     public void startTable() {
@@ -57,6 +61,13 @@ public class Inicio implements Initializable {
         this.ram.setCellValueFactory(new PropertyValueFactory<>("mem"));
 
         this.processTable.setItems(lista);
+        lista.addListener(new ListChangeListener() {
+            @Override
+            public void onChanged(ListChangeListener.Change change) {
+                cpuG.setValue(Agregador.getInstance().getLastCPUTotal());
+                ramG.setValue(Agregador.getInstance().getLastMEMTotal());
+            }
+        });
     }
 
     @FXML
@@ -95,18 +106,6 @@ public class Inicio implements Initializable {
         }
     }
 
-    @FXML
-    void refresh(MouseEvent event) {
-        ObservableList<Process> lista = FXCollections
-                .observableArrayList(
-                        Agregador
-                        .getInstance()
-                        .getLastEstado()
-                        .getProcessos());
-
-        this.processTable.setItems(lista);
-        this.processTable.refresh();
-    }
 
     @FXML
     void exitApp(MouseEvent event) {

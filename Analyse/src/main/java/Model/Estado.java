@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Estado {
     private String uptime;
-    private List<Process> processos;
+    private final List<Process> processos;
     private Double cpuTotal;
     private Double ramTotal;
 

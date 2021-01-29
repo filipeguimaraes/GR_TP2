@@ -41,12 +41,10 @@ public class Monitorization {
             while (running) {
                 try {
                     Client client = new Client(address + "/" + port, community);
-                    log.open();
 
-                    //String sysDescr = String.format("{ \"sysINFO\" = \"%s\" }", client.getString(VARIABLES.SYSDESCR));
-                    //log.append(sysDescr);
                     Map<Integer, Process> processos = getProcesses(client);
                     if (processosAntigos != null) {
+                        log.open();
                         log.append(getUptime(client));
                         for (Process p : processos.values()) {
                             p.setCpu(processosAntigos.get(p.getPid()), this.polling);
