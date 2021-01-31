@@ -1,3 +1,5 @@
+package Model;
+
 import org.snmp4j.*;
 import org.snmp4j.event.ResponseEvent;
 import org.snmp4j.mp.SnmpConstants;
@@ -14,14 +16,16 @@ import java.util.TreeMap;
 
 
 /**
- * Simplest client possible
+ * Classe de comunicação para o SNMP usando o SNMP4j.
+ * Adaptado de <a href="https://blog.jayway.com/author/johanrask/">Johan Rask</a> .
  *
- * @author johanrask
+ * @see <a href="https://blog.jayway.com/2010/05/21/introduction-to-snmp4j/">Introdution to SNMP4J</a>
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A85308
  */
 public class Client {
 
     private final String address;
-    private String community;
+    private final String community;
     private Snmp snmp;
 
 
@@ -39,19 +43,6 @@ public class Client {
         transport.listen();
     }
 
-    public String getString(String oid) throws IOException {
-        PDU pdu = new PDU();
-        pdu.add(new VariableBinding(new OID(oid)));
-        pdu.setType(PDU.GET);
-        ResponseEvent event = snmp.send(pdu, getTarget(), null);
-
-        if (event == null) {
-            throw new RuntimeException("Nenhum evento");
-        }
-
-        return event.getResponse().get(0).getVariable().toString();
-    }
-
 
     private Target getTarget() {
         Address targetAddress = GenericAddress.parse(address);
@@ -63,7 +54,7 @@ public class Client {
     }
 
 
-    public List<TreeEvent> getColumn(String OID) {
+    private List<TreeEvent> getColumn(String OID) {
         TreeUtils treeUtils = new TreeUtils(snmp, new DefaultPDUFactory());
         return treeUtils.getSubtree(getTarget(), new OID(OID));
     }
@@ -145,6 +136,19 @@ public class Client {
                 }
             }
         }
+    }
+
+    public String getString(String oid) throws IOException {
+        PDU pdu = new PDU();
+        pdu.add(new VariableBinding(new OID(oid)));
+        pdu.setType(PDU.GET);
+        ResponseEvent event = snmp.send(pdu, getTarget(), null);
+
+        if (event == null) {
+            throw new RuntimeException("Nenhum evento");
+        }
+
+        return event.getResponse().get(0).getVariable().toString();
     }
 
 

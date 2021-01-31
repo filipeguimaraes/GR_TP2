@@ -1,8 +1,9 @@
+package Controller;
+
+import Model.Monitor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -35,10 +36,13 @@ public class UIController {
 
     @FXML
     void startMonitoring(ActionEvent event) {
-        onoff.setImage(new Image("images/on.png"));
-        Monitorization monitor = Monitorization.getInstance();
+        this.onoff.setImage(new Image("images/on.png"));
+        Monitor monitor = Monitor.getInstance();
         try {
-            monitor.start(address.getText(), port.getText(),community.getText(), text);
+            monitor.start(this.address.getText(),
+                    this.port.getText(),
+                    this.community.getText(),
+                    this.text);
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
@@ -49,23 +53,25 @@ public class UIController {
 
     @FXML
     void stopMonitoring(ActionEvent event) {
-        Monitorization monitor = Monitorization.getInstance();
-        monitor.join(this.address.getText(),this.port.getText(),this.text);
+        Monitor.getInstance().join(this.address.getText(), this.port.getText(), this.text);
+        if (!Monitor.getInstance().haveThreads()) {
+            this.onoff.setImage(new Image("images/off.png"));
+        }
     }
 
 
     @FXML
     void changeSettings(MouseEvent event) {
         try {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("update.fxml"));
-        Scene scene = null;
-        scene = new Scene(fxmlLoader.load());
-        scene.getStylesheets().add("material.css");
-        Stage stage = new Stage();
-        stage.setTitle("Settings");
-        stage.setScene(scene);
-        stage.show();
+            Stage stage = new Stage();
+            stage.setTitle("Settings");
+            Image image = new Image("/images/settings.png");
+            stage.getIcons().add(image);
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/View/update.fxml")));
+            scene.getStylesheets().add("StyleSheet/material.css");
+            stage.setScene(scene);
+            stage.centerOnScreen();
+            stage.show();
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());

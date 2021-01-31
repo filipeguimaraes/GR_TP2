@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="429.0" styleClass="card" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="429.0" styleClass="card" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UIController">
    <children>
       <Region prefHeight="134.0" prefWidth="429.0" />
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
@@ -20,7 +20,7 @@
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
             <ImageView fitHeight="150.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/SNMP_blue.png" />
+                  <Image url="@../images/SNMP_blue.png" />
                </image>
             </ImageView>
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
@@ -72,7 +72,7 @@
             </VBox>
             <ImageView fx:id="onoff" fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/off.png" />
+                  <Image url="@../images/off.png" />
                </image>
             </ImageView>
             <Region layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
@@ -84,7 +84,7 @@
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
             <ImageView fx:id="settings" fitHeight="33.0" fitWidth="30.0" onMouseClicked="#changeSettings" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/settings.png" />
+                  <Image url="@../images/settings.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />

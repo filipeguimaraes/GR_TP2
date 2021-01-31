@@ -5,7 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83cc035-b517-4d57-af77-ea6bdd902a21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-31T18:21:34.33332281.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/Monitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/Monitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/AUX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Agregador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Agregador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Estado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-29T00:44:12.332314673.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-29T00:54:14.483510418.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-29T01:14:46.921417402.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-29T01:21:49.079154696.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-29T01:31:37.97025554.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-01-29T01:35:06.91354972.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/MainFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Monitorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Model/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Model/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/UIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Controller/UIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/VARIABLES.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Model/VARIABLES.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/java/updateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/java/Controller/updateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/StyleSheet/material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/View/ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/src/main/resources/update.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/src/main/resources/View/update.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Monitorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Process.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/UIController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/VARIABLES.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/material.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/ui.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/update.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/updateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,17 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -138,6 +162,8 @@
       <workItem from="1611878590644" duration="4850000" />
       <workItem from="1611883550421" duration="765000" />
       <workItem from="1611910673949" duration="1340000" />
+      <workItem from="1612005121633" duration="961000" />
+      <workItem from="1612101457227" duration="604000" />
     </task>
     <servers />
   </component>

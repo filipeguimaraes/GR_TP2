@@ -1,3 +1,6 @@
+package Controller;
+
+import Model.Monitor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -16,7 +19,7 @@ public class updateController {
 
     @FXML
     void applyTime(ActionEvent event) {
-        Monitorization monitor = Monitorization.getInstance();
+        Monitor monitor = Monitor.getInstance();
         monitor.changePulling(Integer.parseInt(time.getText()));
         Node source = (Node) event.getSource();
         Window theStage = source.getScene().getWindow();

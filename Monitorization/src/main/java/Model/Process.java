@@ -1,3 +1,5 @@
+package Model;
+
 import org.snmp4j.smi.OID;
 
 /*
