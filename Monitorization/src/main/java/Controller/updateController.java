@@ -9,6 +9,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
+/**
+ * Controlador da View update de javaFX.
+ *
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class updateController {
 
     @FXML
@@ -17,6 +22,12 @@ public class updateController {
     @FXML
     private Button apply;
 
+    /**
+     * Aplica o novo tempo de polling que foi introduzido no campo.
+     * É chamado quando se clica em apply.
+     *
+     * @param event Usado para obter a janela para posteriormente fecha-la.
+     */
     @FXML
     void applyTime(ActionEvent event) {
         Monitor monitor = Monitor.getInstance();

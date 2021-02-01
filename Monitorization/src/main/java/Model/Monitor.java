@@ -16,13 +16,21 @@ import java.util.Map;
  */
 public class Monitor {
 
-    // Instância privada partilhada por todos
+    /**
+     * Instância privada partilhada por todos
+     */
     private static Monitor instance = null;
-    // Mapa com todas as threads em execução. A chave é composta pelo endereço e porta (address+":"+port)
+    /**
+     * Mapa com todas as threads em execução. A chave é composta pelo endereço e porta (address+":"+port)
+     */
     private final Map<String, Thread> threads;
-    // Variável responsável por para a execução dos ciclos em todas as threads
+    /**
+     * Variável responsável por para a execução dos ciclos em todas as threads
+     */
     private final boolean running;
-    // Tempo em que a aplicação faz polling dos dados
+    /**
+     * Tempo em que a aplicação faz polling dos dados
+     */
     private int polling;
 
     // **************************************************
@@ -62,8 +70,9 @@ public class Monitor {
     }
 
     /**
-     * Método responsável pela criação e preenchimento do ficheiro de log usando uma thread por cada
-     * vez que se executa este. Pode ser usado quantas vezes for necessário por cada endereço a monitorizar.
+     * Método responsável pela criação e preenchimento do ficheiro de log usando uma
+     * thread por cada vez que se executa este.
+     * Pode ser usado quantas vezes for necessário por cada endereço a monitorizar.
      *
      * @param address   Endereço do sistema a monitorizar
      * @param port      Porta onde será feita a comunicação SNMP
@@ -75,6 +84,10 @@ public class Monitor {
         if (address == null || port == null) {
             throw new IOException("Endereço ou porta não indicados!");
         }
+
+        if (this.threads.containsKey(address+":"+port))
+            throw new IOException("Endereço já está a ser monitorizado.");
+
         Log log = new Log(address, port);
 
         Thread thread = new Thread(() -> {

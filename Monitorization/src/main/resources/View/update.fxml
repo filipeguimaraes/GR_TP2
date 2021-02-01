@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox prefHeight="144.0" prefWidth="506.0" styleClass="card" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.updateController">
+<HBox prefHeight="151.0" prefWidth="334.0" styleClass="card" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.updateController">
    <children>
       <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
       <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="296.0">
@@ -16,7 +16,7 @@
             <Label styleClass="control-label" text="Polling Time" />
             <HBox>
                <children>
-                  <TextField fx:id="time" promptText="time" text="60" />
+                  <TextField fx:id="time" promptText="time" text="30" />
                   <Region prefHeight="26.0" prefWidth="44.0" HBox.hgrow="ALWAYS" />
                   <Button fx:id="apply" mnemonicParsing="false" onAction="#applyTime" prefHeight="26.0" prefWidth="106.0" styleClass="button-raised" text="Apply" />
                </children>

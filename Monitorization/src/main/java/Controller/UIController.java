@@ -16,6 +16,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Controlador da View ui de javaFX.
+ *
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class UIController {
     @FXML
     private TextField address;
@@ -34,6 +39,11 @@ public class UIController {
     @FXML
     private ImageView settings;
 
+    /**
+     * Começa uma monitorização com os dados introduzidos.
+     *
+     * @param event Não usado.
+     */
     @FXML
     void startMonitoring(ActionEvent event) {
         this.onoff.setImage(new Image("images/on.png"));
@@ -50,7 +60,11 @@ public class UIController {
         }
     }
 
-
+    /**
+     * Para a monitorização com os dados introduzidos.
+     *
+     * @param event Não usado.
+     */
     @FXML
     void stopMonitoring(ActionEvent event) {
         Monitor.getInstance().join(this.address.getText(), this.port.getText(), this.text);
@@ -59,7 +73,11 @@ public class UIController {
         }
     }
 
-
+    /**
+     * Abre uma janela para alterar o tempo de polling.
+     *
+     * @param event Não usado.
+     */
     @FXML
     void changeSettings(MouseEvent event) {
         try {
