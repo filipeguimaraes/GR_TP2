@@ -5,69 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ce35b81-7f6a-4469-8a8d-63f98a51255a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alarm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tradutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/ProcessGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/StyleSheet/material.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/View/info.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/images/info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-02-01T13:24:51.693495523.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-02-01T19:52:42.06546702.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-02-01T22:31:55.944336427.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.2:161::2021-02-01T19:56:43.142653216.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ByCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teste/src/main/java/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tradutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tradutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controllers/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerCPU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controllers/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controllers/Mem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controllers/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/MainFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Agregador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Agregador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Estado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Tradutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Tradutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/resources/cpu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/View/cpu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/resources/images/monitor.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/images/monitor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/resources/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/View/ui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/resources/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheet/material.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/resources/mem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/View/mem.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/resources/monitor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/resources/View/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controllers/Cpu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controllers/Inicio$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controllers/Inicio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controllers/Mem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controllers/Monitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/MainFX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Agregador.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Agregador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Estado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Tradutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Tradutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/cpu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/images/monitor.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/images/monitor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/inicio.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/material.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/mem.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/monitor.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Controller/UIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Controller/UIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitorization/target/classes/MainFX.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +25,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1nwnkuVSLBgJlCCVuQxMtuKMXSV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -98,6 +54,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -107,7 +65,29 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn javafx:run" />
+      <command value="mvn package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ByCommand">
+    <configuration name="ByCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ByCommand" />
+      <module name="Alarm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Email" />
+      <module name="Alarm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -119,6 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ByCommand" />
+        <item itemvalue="Application.Email" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,6 +115,8 @@
       <option name="presentableId" value="Default" />
       <updated>1612310183621</updated>
       <workItem from="1612310184772" duration="1148000" />
+      <workItem from="1612366057536" duration="3026000" />
+      <workItem from="1612374714722" duration="8429000" />
     </task>
     <servers />
   </component>

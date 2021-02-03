@@ -6,16 +6,6 @@ import java.util.regex.Pattern;
  */
 public class Tradutor {
 
-    public static String linhaToUptime(String linha) {
-        Pattern pattern = Pattern.compile("[0-9]*:[0-9]*:[0-9]*\\.[0-9]*");
-        Matcher matcher = pattern.matcher(linha);
-        if (matcher.find()) {
-            return matcher.group();
-        } else {
-            return null;
-        }
-    }
-
     public static Process linhaProcess(String linha) {
         return new Process(getPID(linha), getName(linha), getRAM(linha), getCPU(linha));
     }
