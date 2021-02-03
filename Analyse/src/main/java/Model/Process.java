@@ -5,6 +5,9 @@ import javax.swing.*;
 /*
  * Classe com a estrutura de um processo bem como os métodos a eles aplicados
  */
+/**
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class Process {
     private final Integer pid;
     private final String name;

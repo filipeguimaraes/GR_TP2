@@ -5,6 +5,9 @@ import java.io.*;
 /*
  * Class para ler do log
  * */
+/**
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class Log {
 
     final String path;

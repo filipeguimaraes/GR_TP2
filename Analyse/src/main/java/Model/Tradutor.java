@@ -3,6 +3,9 @@ package Model;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class Tradutor {
 
     public static String linhaToUptime(String linha) {

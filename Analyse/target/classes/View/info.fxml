@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="473.0" prefWidth="794.0" spacing="10.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerInfo">
+   <children>
+      <HBox prefHeight="89.0" prefWidth="774.0" VBox.vgrow="NEVER">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="68.0" prefWidth="284.0" styleClass="card" HBox.hgrow="NEVER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="223.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="0.0" prefWidth="26.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="52.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+                     <children>
+                        <Label styleClass="control-label" text="Process name" />
+                        <TextField fx:id="searchName" onKeyPressed="#doIT" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="30.0" fitWidth="134.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+                     <image>
+                        <Image url="@../images/search.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Region prefHeight="70.0" prefWidth="13.0" HBox.hgrow="NEVER" />
+            <ProgressIndicator fx:id="loading" prefHeight="86.0" prefWidth="29.0" visible="false" HBox.hgrow="NEVER" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="393.0" prefWidth="774.0" styleClass="card" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="processos" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="pid" prefWidth="75.0" text="PID" />
+                <TableColumn fx:id="name" minWidth="100.0" prefWidth="338.0" text="Name" />
+                  <TableColumn fx:id="cpu" prefWidth="96.0" text="Avergage cpu" />
+                  <TableColumn fx:id="mem" prefWidth="96.0" text="Average mem" />
+                  <TableColumn fx:id="uptime" prefWidth="110.0" text="Uptime" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

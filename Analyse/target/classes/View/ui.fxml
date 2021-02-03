@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.Gauge?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerUI">
+   <children>
+          <VBox alignment="CENTER" prefWidth="962.0" HBox.hgrow="ALWAYS">
+              <children>
+                  <GridPane hgap="10.0" prefHeight="91.0" prefWidth="828.0" styleClass="card" vgap="10.0" VBox.vgrow="ALWAYS">
+                      <columnConstraints>
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                      <children>
+                          <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cpuClick" pickOnBounds="true" preserveRatio="true" styleClass="button-raised" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                              <image>
+                                  <Image url="@../images/cpu.png" />
+                              </image>
+                              <cursor>
+                                  <Cursor fx:constant="HAND" />
+                              </cursor>
+                          </ImageView>
+                          <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#memClick" pickOnBounds="true" preserveRatio="true" styleClass="button-raised" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                              <image>
+                                  <Image url="@../images/ram.png" />
+                              </image>
+                              <cursor>
+                                  <Cursor fx:constant="HAND" />
+                              </cursor>
+                          </ImageView>
+                          <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#exitApp" pickOnBounds="true" preserveRatio="true" styleClass="button-raised" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                              <image>
+                                  <Image url="@../images/exit.png" />
+                              </image>
+                              <cursor>
+                                  <Cursor fx:constant="HAND" />
+                              </cursor>
+                              <GridPane.margin>
+                                  <Insets />
+                              </GridPane.margin>
+                          </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="317.0" layoutY="16.0" onMouseClicked="#infoClick" pickOnBounds="true" preserveRatio="true" styleClass="button-raised" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@../images/info.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ImageView>
+                      </children>
+                      <padding>
+                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                      </padding>
+                      <VBox.margin>
+                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                      </VBox.margin>
+                  </GridPane>
+                  <HBox spacing="10.0" VBox.vgrow="ALWAYS">
+                      <VBox.margin>
+                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                      </VBox.margin>
+                      <children>
+                          <GridPane alignment="CENTER" hgap="10.0" styleClass="card" vgap="10.0" HBox.hgrow="ALWAYS">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <TableView fx:id="processTable" onMouseClicked="#processSelected" prefHeight="326.0" prefWidth="648.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                      <columns>
+                                          <TableColumn fx:id="PID" prefWidth="100.0" text="PID" />
+                                          <TableColumn fx:id="name" prefWidth="250.0" text="Name" />
+                                          <TableColumn fx:id="cpu" minWidth="0.0" prefWidth="100.0" text="CPU" />
+                                          <TableColumn fx:id="ram" prefWidth="100.0" text="RAM" />
+                                      </columns>
+                                  </TableView>
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                          </GridPane>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                                <GridPane hgap="10.0" prefHeight="358.0" prefWidth="227.0" styleClass="card" vgap="10.0" VBox.vgrow="ALWAYS">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Gauge fx:id="cpuG" animated="true" areaTextVisible="true" lcdFont="ELEKTRA" skinType="TILE_KPI" unit="CPU (%)" />
+                                        <Gauge fx:id="ramG" animated="true" areaTextVisible="true" lcdFont="ELEKTRA" skinType="TILE_KPI" unit="RAM (%)" GridPane.rowIndex="1" />
+                                    </children>
+                                </GridPane>
+                        <GridPane prefHeight="170.0" prefWidth="232.0" styleClass="card" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="TOP_LEFT" styleClass="card-title" text="Info:" />
+                                    <Label fx:id="infoText" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="204.0" text="Nenhum processo selecionado." wrapText="true" VBox.vgrow="ALWAYS" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                      </children>
+                  </HBox>
+              </children>
+              <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+          </VBox>
+   </children>
+</HBox>
