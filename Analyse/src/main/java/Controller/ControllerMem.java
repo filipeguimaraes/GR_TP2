@@ -13,6 +13,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
+ * Controlador da view com o gráfico referente à memória da aplicação.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class ControllerMem implements Initializable {
@@ -25,9 +27,10 @@ public class ControllerMem implements Initializable {
     private NumberAxis yAxis;
 
     /**
+     *  Criar a tabela com os dados referentes á memória.
      *
-     * @param url
-     * @param resourceBundle
+     * @param url Ignored.
+     * @param resourceBundle Ignored.
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

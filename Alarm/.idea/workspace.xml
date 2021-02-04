@@ -5,12 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ce35b81-7f6a-4469-8a8d-63f98a51255a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Monitorization/alarm::127.0.0.1:161::2021-02-04T22:18:19.368691051.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-02-04T22:18:19.368691051.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Alarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/ProcessGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/ProcessGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerCPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerCPU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/MainFX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Tradutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Tradutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerCPU.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerCPU.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerMem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerMem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Controller/ControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/MainFX$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/MainFX$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/MainFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Agregador.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Agregador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Estado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Process.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/ProcessGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/ProcessGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/classes/Model/Tradutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/classes/Model/Tradutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +148,7 @@
       <workItem from="1612310184772" duration="1148000" />
       <workItem from="1612366057536" duration="3026000" />
       <workItem from="1612374714722" duration="11706000" />
-      <workItem from="1612440359829" duration="5515000" />
+      <workItem from="1612440359829" duration="8234000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,8 @@
+/**
+ * Ponto de partida da aplicação.
+ *
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class Main {
 
     /**
@@ -5,7 +10,7 @@ public class Main {
      *
      * @param args Argumentos.
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         MainFX.main(args);
     }
 }

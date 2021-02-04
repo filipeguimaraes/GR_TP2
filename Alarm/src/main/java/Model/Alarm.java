@@ -15,29 +15,81 @@ import java.util.List;
  * */
 
 /**
+ * Classe responsável por ler o ficheiro de log's e gerar alarmes.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class Alarm {
-
+    /**
+     * Caminho para o ficheiro de log's
+     */
     private final String path;
+    /**
+     * Caminho para o ficheiro de alarmes
+     */
     private final File alarmFile;
+    /**
+     * Area para escrever na aplicação
+     */
     private final TextArea textArea;
+    /**
+     *
+     */
     private BufferedReader br;
+    /**
+     *
+     */
     private final boolean running;
+    /**
+     *
+     */
     private boolean doEmail;
+    /**
+     *
+     */
     private String email;
+    /**
+     *
+     */
     private boolean doCommand;
+    /**
+     *
+     */
     private String command;
+    /**
+     *
+     */
     private Double cpuThreshold;
+    /**
+     *
+     */
     private Double memThreshold;
+    /**
+     *
+     */
     private static Alarm instance;
 
+    /**
+     *  Obter a instância global desta classe.
+     *
+     * @return Instência da classe.
+     * @throws Exception Coso não exista uma instância.
+     */
     public static Alarm getInstance() throws Exception {
         if (Alarm.instance == null) {
             throw new Exception("Alarm does not exist");
         }
         return instance;
     }
+
+    /**
+     * Construtor da aplicação.
+     * Não deve ser chamado mais que uma vez na execução da aplicação.
+     *
+     * @param file
+     * @param textArea
+     * @throws IOException
+     */
     public Alarm(File file, TextArea textArea) throws IOException {
         this.path = file.getPath();
         String alarmPath = path.replace("log","alarm");

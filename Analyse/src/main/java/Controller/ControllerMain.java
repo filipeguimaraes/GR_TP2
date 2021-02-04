@@ -18,6 +18,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
+ * Controlador da primeira view da aplicação.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class ControllerMain {
@@ -30,8 +32,10 @@ public class ControllerMain {
     private ProgressIndicator progress;
 
     /**
+     *  Ação desencadeada pelo botão "choose file".
+     *  Abre o ficheiro escolhido e executa os respetivos métodos da classe Log.
      *
-     * @param event
+     * @param event Abrir janela para escolha do ficheiro.
      */
     @FXML
     void chooseFile(ActionEvent event) {
@@ -53,7 +57,7 @@ public class ControllerMain {
             this.progress.setVisible(true);
             try {
                 log.init();
-            } catch (IOException | InterruptedException e) {
+            } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("Não foi possível ler o ficheiro.");
                 alert.showAndWait();
@@ -78,8 +82,10 @@ public class ControllerMain {
     }
 
     /**
+     * É desencadeado pelo botão "start".
+     * Abre uma nova janela com as informações sobre os processos.
      *
-     * @param event
+     * @param event Abrir a página a próxima página.
      */
     @FXML
     void start(ActionEvent event) {

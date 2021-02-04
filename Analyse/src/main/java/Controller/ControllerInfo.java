@@ -13,6 +13,11 @@ import javafx.scene.input.MouseEvent;
 
 import java.text.ParseException;
 
+/**
+ * Controlador da primeira view da aplicação.
+ *
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class ControllerInfo {
 
     @FXML
@@ -33,15 +38,24 @@ public class ControllerInfo {
     private TableColumn<ProcessGroup, Number> uptime;
 
 
+    /**
+     * Ativar a pesquisa ao clicar na tecla ENTER.
+     *
+     * @param event Tecla pressionada.
+     */
     @FXML
     void doIT(KeyEvent event) {
         if (event.getCode() == KeyCode.ENTER) {
-            search(null);
+            search();
         }
     }
 
+    /**
+     * Pesquisa com o nome introduzido.
+     *
+     */
     @FXML
-    void search(MouseEvent event) {
+    void search() {
         this.loading.setVisible(true);
         try {
             ObservableList<ProcessGroup> pg =

@@ -1,11 +1,13 @@
-/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerMain.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerCPU.java
-/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/Process.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Main.java
+/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/ProcessGroup.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/MainFX.java
+/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerMem.java
+/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerMain.java
+/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/Process.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/Agregador.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/Tradutor.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/Estado.java
-/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerMem.java
+/home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerInfo.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Model/Log.java
 /home/wtv/universidade/GR/GR_TP2/Analyse/src/main/java/Controller/ControllerUI.java

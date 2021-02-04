@@ -19,14 +19,14 @@
    <children>
       <GridPane alignment="CENTER" hgap="10.0" prefHeight="109.0" prefWidth="580.0" VBox.vgrow="ALWAYS">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="230.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.0" minWidth="10.0" prefWidth="318.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="440.0" minWidth="10.0" prefWidth="193.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="421.0" minWidth="10.0" prefWidth="377.0" />
         </columnConstraints>
         <rowConstraints>
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #8A000E;" styleClass="card" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <VBox alignment="CENTER" prefHeight="237.0" prefWidth="144.0" spacing="10.0" style="-fx-background-color: #8A000E;" styleClass="card" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <children>
                   <ImageView fitHeight="84.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
                      <image>

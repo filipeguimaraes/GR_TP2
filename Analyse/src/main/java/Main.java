@@ -1,12 +1,16 @@
-import Model.Agregador;
-import Model.Estado;
-import Model.Log;
-
-import java.io.IOException;
-
+/**
+ * Ponto de partida da aplicação.
+ *
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class Main {
 
-    public static void main(final String[] args) throws IOException, InterruptedException {
+    /**
+     * Iniciar o programa. Funcionalmente sem utilidade. Apenas para compatibilidade com o javaFX.
+     *
+     * @param args Argumentos.
+     */
+    public static void main(final String[] args) {
         MainFX.main(args);
     }
 }

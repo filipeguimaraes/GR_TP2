@@ -24,6 +24,8 @@ import java.text.ParseException;
 import java.util.ResourceBundle;
 
 /**
+ * Controlador da view principal da aplicação.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class ControllerUI implements Initializable {

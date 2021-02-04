@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Class que traduz as linhas do ficheiro de log em objetos ou strings em java.
+ * Classe que traduz as linhas do ficheiro de log em objetos ou strings em java.
  *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
@@ -12,6 +12,7 @@ public class Tradutor {
 
     /**
      * Transforma uma linha de uptime para uma string apenas com o valor usando expressões regulares.
+     *
      * @param linha Linha a formatar
      * @return Uptime
      */
@@ -36,8 +37,10 @@ public class Tradutor {
     }
 
     /**
-     * @param linha
-     * @return
+     * A partir de uma linha retira o PID do processo usando expressões regulares.
+     *
+     * @param linha Linha do ficheiro.
+     * @return PID do processo
      */
     private static Integer getPID(String linha) {
         Pattern PIDpattern = Pattern.compile("\"pid\":[0-9]+", Pattern.MULTILINE);
@@ -53,8 +56,10 @@ public class Tradutor {
     }
 
     /**
-     * @param linha
-     * @return
+     * A partir de uma linha retira o PID do processo usando expressões regulares.
+     *
+     * @param linha Linha do ficheiro.
+     * @return PID do processo.
      */
     private static String getName(String linha) {
         Pattern NAMEpattern = Pattern.compile("\"name\":\"[^\"]*\"");
@@ -70,8 +75,10 @@ public class Tradutor {
     }
 
     /**
-     * @param linha
-     * @return
+     * A partir de uma linha retira o cpu utilizado pelo processo usando expressões regulares.
+     *
+     * @param linha Linha do ficheiro.
+     * @return CPU utilizado pelo processo.
      */
     private static Double getCPU(String linha) {
         Pattern CPUpattern = Pattern.compile("\"cpu\":[0-9]+\\.[0-9]+");
@@ -87,8 +94,10 @@ public class Tradutor {
     }
 
     /**
-     * @param linha
-     * @return
+     * A partir de uma linha retira a memoria ocupada pelo processo usando expressões regulares.
+     *
+     * @param linha Linha do ficheiro.
+     * @return Ram utilizada pelo processo.
      */
     private static Double getRAM(String linha) {
         Pattern MEMpattern = Pattern.compile("\"mem\":[0-9]+\\.[0-9]+");
