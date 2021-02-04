@@ -6,26 +6,13 @@ package Model;/*
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class Process {
-    private final Integer pid;
-    private final String name;
     private final Double mem;
     private final Double cpu;
 
 
-    public Process(Integer pid, String name, Double mem, Double cpu) {
-        this.pid = pid;
-        this.name = name;
+    public Process(Double mem, Double cpu) {
         this.mem = mem;
         this.cpu = cpu;
-    }
-
-
-    public Integer getPid() {
-        return pid;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public Double getMem() {

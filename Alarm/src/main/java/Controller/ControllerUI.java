@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Log;
+import Model.Alarm;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 
 import javax.mail.MessagingException;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ControllerUI {
@@ -35,16 +34,16 @@ public class ControllerUI {
     private Button apply;
 
     @FXML
-    void applySettings(ActionEvent event) {
+    void applySettings() {
         try {
-            Log log = Log.getInstance();
-            log.setCommand(command.getText());
-            log.setDoCommand(doCommand.isSelected());
-            log.setEmail(email.getText());
-            log.setDoEmail(doEmail.isSelected());
-            log.setCpuThreshold(Double.parseDouble(cpu.getText()));
-            log.setMemThreshold(Double.parseDouble(mem.getText()));
-            textArea.setText(textArea.getText()+"Settings changed.\n");
+            Alarm alarm = Alarm.getInstance();
+            alarm.setCommand(command.getText());
+            alarm.setDoCommand(doCommand.isSelected());
+            alarm.setEmail(email.getText());
+            alarm.setDoEmail(doEmail.isSelected());
+            alarm.setCpuThreshold(Double.parseDouble(cpu.getText()));
+            alarm.setMemThreshold(Double.parseDouble(mem.getText()));
+            Alarm.getInstance().printText("Settings changed.");
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
@@ -62,10 +61,10 @@ public class ControllerUI {
                 selectedFile.getPath().contains("log") &&
                 selectedFile.getPath().contains(".txt")) {
             try {
-                Log log = new Log(selectedFile,textArea);
+                Alarm alarm = new Alarm(selectedFile, textArea);
                 new Thread(() -> {
                     try {
-                        log.read();
+                        alarm.read();
                     } catch (IOException | InterruptedException | MessagingException e) {
                         Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setContentText("Não foi possível ler o ficheiro.");

@@ -68,8 +68,7 @@ public class Log {
     /**
      * Método que fecha o stream de escrita para o ficheiro.
      *
-     * @throws IOException Caso não consiga fechar a stream de escrita.
-     */
+     * @throws IOException Caso não consiga fechar a stream de escrita.     */
     public void close() throws IOException {
         this.dataOutputStream.close();
     }

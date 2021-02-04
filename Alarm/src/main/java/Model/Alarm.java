@@ -4,6 +4,9 @@ import javafx.scene.control.TextArea;
 
 import javax.mail.MessagingException;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,28 +17,35 @@ import java.util.List;
 /**
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
-public class Log {
+public class Alarm {
 
-    final String path;
+    private final String path;
+    private final File alarmFile;
     private final TextArea textArea;
     private BufferedReader br;
-    private boolean running;
+    private final boolean running;
     private boolean doEmail;
     private String email;
     private boolean doCommand;
     private String command;
     private Double cpuThreshold;
     private Double memThreshold;
-    private static Log instance;
+    private static Alarm instance;
 
-    public static Log getInstance() throws Exception {
-        if (Log.instance == null) {
-            throw new Exception("Log does not exist");
+    public static Alarm getInstance() throws Exception {
+        if (Alarm.instance == null) {
+            throw new Exception("Alarm does not exist");
         }
         return instance;
     }
-    public Log(File file, TextArea textArea) throws IOException {
+    public Alarm(File file, TextArea textArea) throws IOException {
         this.path = file.getPath();
+        String alarmPath = path.replace("log","alarm");
+        this.alarmFile = new File(alarmPath);
+        if(!alarmFile.exists()){
+            //noinspection ResultOfMethodCallIgnored
+            alarmFile.createNewFile();
+        }
         this.running = true;
         this.textArea = textArea;
         this.doEmail = false;
@@ -51,10 +61,6 @@ public class Log {
         br = new BufferedReader(new FileReader(path));
     }
 
-    public void close() throws IOException {
-        br.close();
-    }
-
 
     private void init() throws IOException {
         String line;
@@ -64,8 +70,9 @@ public class Log {
     }
 
 
+    @SuppressWarnings("LoopConditionNotUpdatedInsideLoop")
     public void read() throws IOException, InterruptedException, MessagingException {
-        String line = null;
+        String line;
         List<Process> processes = new ArrayList<>();
         boolean adicionado = true;
         while (running) {
@@ -96,17 +103,17 @@ public class Log {
                 msg += "Memory above threshold. ";
             }
             if (cpu){
-                msg += "CPU above threshoold. ";
+                msg += "CPU above threshold. ";
             }
             if (doEmail) {
                 Email email = new Email(this.email);
                 email.send("Alarm",msg);
             }
             if (doCommand) {
-                ByCommand c = new ByCommand();
-                c.send(command,"Alarm",msg);
+                sendByCommand("Alarm",msg);
             }
             printText(msg);
+            appendToAlarmFile(msg);
         }else printText("No alarms were generated.");
     }
 
@@ -132,11 +139,28 @@ public class Log {
      * @param text Texto a imprimir
      */
     public void printText(String text) {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+        text = "["+ LocalTime.now().format(dtf)+"] "+text;
         if (textArea == null) {
             System.out.println(text);
         } else {
             textArea.setText(textArea.getText() + text + '\n');
         }
+    }
+
+
+    public void appendToAlarmFile(String text) throws IOException {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+        text = "["+ LocalTime.now().format(dtf)+"] "+text;
+        DataOutputStream dataOut = new DataOutputStream(new FileOutputStream(alarmFile, true));
+        dataOut.write((text + '\n').getBytes(StandardCharsets.UTF_8));
+        dataOut.flush();
+        dataOut.close();
+    }
+
+    public void sendByCommand(String subject, String msg) throws IOException {
+        String param[] = { command, subject, msg };
+        Runtime.getRuntime().exec(param);
     }
 
     public void setDoEmail(boolean doEmail) {

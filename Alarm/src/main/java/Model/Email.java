@@ -6,8 +6,8 @@ import java.util.Properties;
 
 public class Email {
     private Session session;
-    private String recipient;
-    private String sender;
+    private final String recipient;
+    private final String sender;
 
     public Email(String recipient){
         this.recipient = recipient;
@@ -16,8 +16,6 @@ public class Email {
     }
 
     private void init() {
-        String host = "localhost";
-
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
         prop.put("mail.smtp.socketFactory.port", "465");

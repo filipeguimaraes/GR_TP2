@@ -4,38 +4,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * Classe simplificada da presente no modulo 2
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class Tradutor {
 
     public static Process linhaProcess(String linha) {
-        return new Process(getPID(linha), getName(linha), getRAM(linha), getCPU(linha));
-    }
-
-    private static Integer getPID(String linha) {
-        Pattern PIDpattern = Pattern.compile("\"pid\":[0-9]+", Pattern.MULTILINE);
-        Matcher PIDmatcher = PIDpattern.matcher(linha);
-        if (PIDmatcher.find()) {
-            String PIDaux = PIDmatcher.group();
-            Pattern PID2pattern = Pattern.compile("[0-9]+");
-            Matcher PID2matcher = PID2pattern.matcher(PIDaux);
-            if (PID2matcher.find()) {
-                return Integer.parseInt(PID2matcher.group());
-            } else return null;
-        } else return null;
-    }
-
-    private static String getName(String linha) {
-        Pattern NAMEpattern = Pattern.compile("\"name\":\"[^\"]*\"");
-        Matcher NAMEmatcher = NAMEpattern.matcher(linha);
-        if (NAMEmatcher.find()) {
-            String NAMEaux = NAMEmatcher.group();
-            Pattern NAME2pattern = Pattern.compile("[^(\"name\":)].*[^\"]");
-            Matcher NAME2matcher = NAME2pattern.matcher(NAMEaux);
-            if (NAME2matcher.find()) {
-                return NAME2matcher.group();
-            } else return null;
-        } else return null;
+        return new Process(getRAM(linha), getCPU(linha));
     }
 
     private static Double getCPU(String linha) {
