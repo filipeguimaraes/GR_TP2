@@ -15,7 +15,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -48,8 +47,10 @@ public class ControllerUI implements Initializable {
     private Label infoText;
 
     /**
-     * @param url
-     * @param resourceBundle
+     * Inicializar as tabelas e velocímetros.
+     *
+     * @param url            ignored.
+     * @param resourceBundle ignored.
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -61,7 +62,7 @@ public class ControllerUI implements Initializable {
     }
 
     /**
-     *
+     * Preencher a tabela com os respetivos dados.
      */
     public void startTable() {
         Agregador ag = Agregador.getInstance();
@@ -83,7 +84,7 @@ public class ControllerUI implements Initializable {
     }
 
     /**
-     *
+     * Abrir o gráfico da memória.
      */
     @FXML
     public void memClick() {
@@ -104,7 +105,7 @@ public class ControllerUI implements Initializable {
     }
 
     /**
-     *
+     * Abrir o gráfico do CPU.
      */
     @FXML
     public void cpuClick() {
@@ -125,7 +126,7 @@ public class ControllerUI implements Initializable {
     }
 
     /**
-     *
+     * Abrir a view das infos.
      */
     @FXML
     void infoClick() {
@@ -146,10 +147,10 @@ public class ControllerUI implements Initializable {
     }
 
     /**
-     * @param event
+     * Chamado quando é selecionado um processo.
      */
     @FXML
-    void processSelected(MouseEvent event) {
+    void processSelected() {
         Process process = processTable.getSelectionModel().getSelectedItem();
         String text = "Name: ";
         text += process.getName() + '\n';
