@@ -4,13 +4,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * Class que traduz as linhas do ficheiro de log em objetos ou strings em java.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class Tradutor {
 
     /**
-     * @param linha
-     * @return
+     * Transforma uma linha de uptime para uma string apenas com o valor usando expressões regulares.
+     * @param linha Linha a formatar
+     * @return Uptime
      */
     public static String linhaToUptime(String linha) {
         Pattern pattern = Pattern.compile("[0-9]*:[0-9]*:[0-9]*\\.[0-9]*");
@@ -23,8 +26,10 @@ public class Tradutor {
     }
 
     /**
-     * @param linha
-     * @return
+     * Transforma uma linha de processo num objeto Process chamando os métodos correspondentes.
+     *
+     * @param linha Linha a processar.
+     * @return Processo criado a partir da linha fornecida.
      */
     public static Process linhaProcess(String linha) {
         return new Process(getPID(linha), getName(linha), getRAM(linha), getCPU(linha));

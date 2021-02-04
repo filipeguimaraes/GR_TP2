@@ -2,33 +2,23 @@ package Model;
 
 
 /**
- * Classe com a estrutura de um processo bem como os métodos a eles aplicados
+ * Classe com a estrutura de um processo.
  *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class Process {
-    /**
-     *
-     */
     private final Integer pid;
-    /**
-     *
-     */
     private final String name;
-    /**
-     *
-     */
     private final Double mem;
-    /**
-     *
-     */
     private final Double cpu;
 
     /**
-     * @param pid
-     * @param name
-     * @param mem
-     * @param cpu
+     * Construtor de classe.
+     *
+     * @param pid PID do processo.
+     * @param name Nome do processo.
+     * @param mem Percentagem de memória.
+     * @param cpu Percentagem de CPU.
      */
     public Process(Integer pid, String name, Double mem, Double cpu) {
         this.pid = pid;
@@ -37,30 +27,19 @@ public class Process {
         this.cpu = cpu;
     }
 
-    /**
-     * @return
-     */
+
     public Integer getPid() {
         return pid;
     }
 
-    /**
-     * @return
-     */
     public String getName() {
         return name;
     }
 
-    /**
-     * @return
-     */
     public Double getMem() {
         return mem;
     }
 
-    /**
-     * @return
-     */
     public Double getCpu() {
         return cpu;
     }

@@ -1,30 +1,38 @@
 package Model;
 
+/**
+ * Estrutura de um processo para apresentar a média de cpu e memória
+ * ao longo do tempo e a respetiva duração.
+ *
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class ProcessGroup {
     /**
-     *
+     * PID do processo.
      */
     private Integer pid;
     /**
-     *
+     * Nome do processo.
      */
     private String name;
     /**
-     *
+     * Percentagem média de cpu.
      */
     private Double cpu;
     /**
-     *
+     * Percentagem média de memória.
      */
     private Double mem;
     /**
-     *
+     * Tempo ativo.
      */
     private Long uptime;
 
     /**
-     * @param pid
-     * @param name
+     * Construtor de um processo.
+     *
+     * @param pid  PID do processo.
+     * @param name Nome do processo.
      */
     public ProcessGroup(Integer pid, String name) {
         this.pid = pid;
@@ -35,7 +43,6 @@ public class ProcessGroup {
     public Integer getPid() {
         return pid;
     }
-
 
     public void setPid(Integer pid) {
         this.pid = pid;

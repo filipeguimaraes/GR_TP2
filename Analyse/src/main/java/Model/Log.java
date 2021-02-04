@@ -84,7 +84,7 @@ public class Log {
      */
     @SuppressWarnings("LoopConditionNotUpdatedInsideLoop")
     public void read() throws IOException, InterruptedException {
-        String line = null;
+        String line;
         Estado estado = new Estado();
         boolean adicionado = true;
         while (running) {

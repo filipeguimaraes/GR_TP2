@@ -7,13 +7,6 @@
     <list default="true" id="4ce35b81-7f6a-4469-8a8d-63f98a51255a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerCPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerCPU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerMem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Controller/ControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Agregador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Agregador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Estado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/Process.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/src/main/java/Model/ProcessGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/src/main/java/Model/ProcessGroup.java" afterDir="false" />

@@ -7,13 +7,6 @@
     <list default="true" id="d83cc035-b517-4d57-af77-ea6bdd902a21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Alarm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Alarm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerCPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerCPU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerMem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerMem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Agregador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Estado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Process.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/ProcessGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ProcessGroup.java" afterDir="false" />
@@ -166,7 +159,7 @@
       <workItem from="1612284575797" duration="11731000" />
       <workItem from="1612365859713" duration="194000" />
       <workItem from="1612393961444" duration="1916000" />
-      <workItem from="1612457555612" duration="6319000" />
+      <workItem from="1612457555612" duration="7673000" />
     </task>
     <servers />
   </component>
