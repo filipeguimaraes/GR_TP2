@@ -5,16 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ce35b81-7f6a-4469-8a8d-63f98a51255a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ByCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../teste/src/main/java/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Controller/ControllerUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MainFX$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/ByCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Email$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Email.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Log.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Process.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Tradutor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Monitorization/log::127.0.0.1:161::2021-02-04T00:56:01.554747551.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ByCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ByCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tradutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tradutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tradutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Tradutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Alarm-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Alarm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ByCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Email$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Email.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Images/alarm.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Images/alarm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/ui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,22 +94,15 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean" />
-      <command value="mvn compile" />
-      <command value="mvn javafx:run" />
       <command value="mvn package" />
+      <command value="mvn clean" />
+      <command value="mvn javafx:run" />
+      <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ByCommand">
-    <configuration name="ByCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ByCommand" />
-      <module name="Alarm" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Email" />
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Alarm" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,8 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ByCommand" />
-        <item itemvalue="Application.Email" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +135,7 @@
       <updated>1612310183621</updated>
       <workItem from="1612310184772" duration="1148000" />
       <workItem from="1612366057536" duration="3026000" />
-      <workItem from="1612374714722" duration="8429000" />
+      <workItem from="1612374714722" duration="11706000" />
     </task>
     <servers />
   </component>
