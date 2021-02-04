@@ -19,13 +19,16 @@ public class ControllerMem implements Initializable {
 
     @FXML
     private AreaChart<String, Number> chart;
-
     @FXML
     private CategoryAxis xAxis;
-
     @FXML
     private NumberAxis yAxis;
 
+    /**
+     *
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         xAxis.setLabel("Time");

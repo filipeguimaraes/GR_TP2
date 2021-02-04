@@ -19,13 +19,16 @@ public class ControllerCPU implements Initializable {
 
     @FXML
     private AreaChart<String, Number> chart;
-
     @FXML
     private CategoryAxis xAxis;
-
     @FXML
     private NumberAxis yAxis;
 
+    /**
+     *
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         xAxis.setLabel("Time");
@@ -33,9 +36,9 @@ public class ControllerCPU implements Initializable {
         yAxis.setLowerBound(0);
         yAxis.setUpperBound(100);
         yAxis.setTickUnit(10);
-        XYChart.Series<String,Number> cpu = new XYChart.Series<>();
-        for (Estado e : Agregador.getInstance().getEstados()){
-            cpu.getData().add(new XYChart.Data<>(e.getUptime(),e.getCpuTotal()));
+        XYChart.Series<String, Number> cpu = new XYChart.Series<>();
+        for (Estado e : Agregador.getInstance().getEstados()) {
+            cpu.getData().add(new XYChart.Data<>(e.getUptime(), e.getCpuTotal()));
         }
 
         chart.getData().add(cpu);

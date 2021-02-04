@@ -2,33 +2,55 @@ package Model;
 
 import java.io.*;
 
-/*
- * Class para ler do log
- * */
+
 /**
+ * Ler do ficheiro de log introduzido e carregar os dados para a estrutura.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class Log {
 
+    /**
+     * Caminho para o ficheiro
+     */
     final String path;
+    /**
+     * Escritor do ficheiro
+     */
     private BufferedReader br;
-    private boolean running;
+    /**
+     * Indica se está a correr ou não.
+     */
+    private final boolean running;
 
+    /**
+     * Construtor de class. Inicializa os objetos.
+     *
+     * @param file Ficheiro para ler.
+     */
     public Log(File file) {
         this.path = file.getPath();
         this.running = true;
     }
 
+    /**
+     * Abre o buffer de escrita para o ficheiro.
+     *
+     * @throws FileNotFoundException Caso não encontre o ficheiro.
+     */
     public void open() throws FileNotFoundException {
         br = new BufferedReader(new FileReader(path));
     }
 
-    public void close() throws IOException {
-        br.close();
-    }
 
-
-    public void init() throws IOException, InterruptedException {
+    /**
+     * Inicia a leitura do ficheiro.
+     * Carrega para o agregador todos os dados que o ficheiro já contem até encontrar o fim.
+     *
+     * @throws IOException Caso não consiga ler do ficheiro.
+     */
+    @SuppressWarnings("LoopConditionNotUpdatedInsideLoop")
+    public void init() throws IOException{
         String line;
         Estado estado = new Estado();
         boolean first = true;
@@ -39,7 +61,7 @@ public class Log {
                 break;
             } else {
                 if (line.contains("uptime")) {
-                    if (!first){
+                    if (!first) {
                         Agregador.getInstance().addEstado(estado);
                     }
                     estado = new Estado();
@@ -53,6 +75,14 @@ public class Log {
     }
 
 
+    /**
+     * Executado a seguir ao #init(). Espera a ter linhas para ler,
+     * quando tem carrega os novos dados para o agregador.
+     *
+     * @throws IOException Quando não consegue ler do ficheiro.
+     * @throws InterruptedException Quando a thread é parada inesperadamente.
+     */
+    @SuppressWarnings("LoopConditionNotUpdatedInsideLoop")
     public void read() throws IOException, InterruptedException {
         String line = null;
         Estado estado = new Estado();

@@ -1,28 +1,41 @@
 package Model;
 
 public class ProcessGroup {
+    /**
+     *
+     */
     private Integer pid;
+    /**
+     *
+     */
     private String name;
+    /**
+     *
+     */
     private Double cpu;
+    /**
+     *
+     */
     private Double mem;
+    /**
+     *
+     */
     private Long uptime;
 
-    public ProcessGroup(Integer pid, String name, Double cpu, Double mem, Long uptime) {
-        this.pid = pid;
-        this.name = name;
-        this.cpu = cpu;
-        this.mem = mem;
-        this.uptime = uptime;
-    }
-
+    /**
+     * @param pid
+     * @param name
+     */
     public ProcessGroup(Integer pid, String name) {
         this.pid = pid;
         this.name = name;
     }
 
+
     public Integer getPid() {
         return pid;
     }
+
 
     public void setPid(Integer pid) {
         this.pid = pid;

@@ -45,7 +45,10 @@ public class ControllerUI implements Initializable {
     @FXML
     private Label infoText;
 
-
+    /**
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cpuG.setValue(Agregador.getInstance().getLastCPUTotal());
@@ -55,6 +58,9 @@ public class ControllerUI implements Initializable {
         startTable();
     }
 
+    /**
+     *
+     */
     public void startTable() {
         Agregador ag = Agregador.getInstance();
         ObservableList<Process> lista = ag.getLastProcesses();
@@ -74,8 +80,11 @@ public class ControllerUI implements Initializable {
         });
     }
 
+    /**
+     *
+     */
     @FXML
-    public void memClick(MouseEvent event) {
+    public void memClick() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/View/mem.fxml"));
@@ -92,8 +101,11 @@ public class ControllerUI implements Initializable {
         }
     }
 
+    /**
+     *
+     */
     @FXML
-    public void cpuClick(MouseEvent event) {
+    public void cpuClick() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/View/cpu.fxml"));
@@ -110,9 +122,11 @@ public class ControllerUI implements Initializable {
         }
     }
 
-
+    /**
+     *
+     */
     @FXML
-    void infoClick(MouseEvent event) {
+    void infoClick() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/View/info.fxml"));
@@ -129,7 +143,9 @@ public class ControllerUI implements Initializable {
         }
     }
 
-
+    /**
+     * @param event
+     */
     @FXML
     void processSelected(MouseEvent event) {
         Process process = processTable.getSelectionModel().getSelectedItem();
@@ -139,7 +155,7 @@ public class ControllerUI implements Initializable {
         text += Agregador.getInstance().getFirstProcessUptime(process.getPid()) + '\n';
         text += "Time up: ";
         try {
-            text += Agregador.getInstance().getTotalTimeProcess(process.getPid())+"s";
+            text += Agregador.getInstance().getTotalTimeProcess(process.getPid()) + "s";
         } catch (ParseException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
@@ -148,9 +164,11 @@ public class ControllerUI implements Initializable {
         infoText.setText(text);
     }
 
-
+    /**
+     * Sair da app terminado todas as threads ativas.
+     */
     @FXML
-    void exitApp(MouseEvent event) {
+    void exitApp() {
         Platform.exit();
         System.exit(0);
     }

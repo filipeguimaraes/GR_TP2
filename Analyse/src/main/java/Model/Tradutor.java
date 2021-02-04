@@ -8,6 +8,10 @@ import java.util.regex.Pattern;
  */
 public class Tradutor {
 
+    /**
+     * @param linha
+     * @return
+     */
     public static String linhaToUptime(String linha) {
         Pattern pattern = Pattern.compile("[0-9]*:[0-9]*:[0-9]*\\.[0-9]*");
         Matcher matcher = pattern.matcher(linha);
@@ -18,10 +22,18 @@ public class Tradutor {
         }
     }
 
+    /**
+     * @param linha
+     * @return
+     */
     public static Process linhaProcess(String linha) {
         return new Process(getPID(linha), getName(linha), getRAM(linha), getCPU(linha));
     }
 
+    /**
+     * @param linha
+     * @return
+     */
     private static Integer getPID(String linha) {
         Pattern PIDpattern = Pattern.compile("\"pid\":[0-9]+", Pattern.MULTILINE);
         Matcher PIDmatcher = PIDpattern.matcher(linha);
@@ -35,6 +47,10 @@ public class Tradutor {
         } else return null;
     }
 
+    /**
+     * @param linha
+     * @return
+     */
     private static String getName(String linha) {
         Pattern NAMEpattern = Pattern.compile("\"name\":\"[^\"]*\"");
         Matcher NAMEmatcher = NAMEpattern.matcher(linha);
@@ -48,6 +64,10 @@ public class Tradutor {
         } else return null;
     }
 
+    /**
+     * @param linha
+     * @return
+     */
     private static Double getCPU(String linha) {
         Pattern CPUpattern = Pattern.compile("\"cpu\":[0-9]+\\.[0-9]+");
         Matcher CPUmatcher = CPUpattern.matcher(linha);
@@ -61,6 +81,10 @@ public class Tradutor {
         } else return null;
     }
 
+    /**
+     * @param linha
+     * @return
+     */
     private static Double getRAM(String linha) {
         Pattern MEMpattern = Pattern.compile("\"mem\":[0-9]+\\.[0-9]+");
         Matcher MEMmatcher = MEMpattern.matcher(linha);
@@ -70,8 +94,8 @@ public class Tradutor {
             Matcher MEM2matcher = MEM2pattern.matcher(MEMaux);
             if (MEM2matcher.find()) {
                 return Double.parseDouble(MEM2matcher.group());
-            }else return null;
-        }else return null;
+            } else return null;
+        } else return null;
     }
 
 }

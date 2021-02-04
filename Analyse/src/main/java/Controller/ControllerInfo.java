@@ -17,32 +17,25 @@ public class ControllerInfo {
 
     @FXML
     private TextField searchName;
-
     @FXML
     private ProgressIndicator loading;
-
     @FXML
     private TableView<ProcessGroup> processos;
-
     @FXML
     private TableColumn<ProcessGroup, Number> pid;
-
     @FXML
     private TableColumn<ProcessGroup, String> name;
-
     @FXML
     private TableColumn<ProcessGroup, Number> cpu;
-
     @FXML
     private TableColumn<ProcessGroup, Number> mem;
-
     @FXML
     private TableColumn<ProcessGroup, Number> uptime;
 
 
     @FXML
     void doIT(KeyEvent event) {
-        if(event.getCode() == KeyCode.ENTER){
+        if (event.getCode() == KeyCode.ENTER) {
             search(null);
         }
     }

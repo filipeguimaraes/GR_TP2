@@ -29,6 +29,10 @@ public class ControllerMain {
     @FXML
     private ProgressIndicator progress;
 
+    /**
+     *
+     * @param event
+     */
     @FXML
     void chooseFile(ActionEvent event) {
         Node node = (Node) event.getSource();
@@ -73,6 +77,10 @@ public class ControllerMain {
         }
     }
 
+    /**
+     *
+     * @param event
+     */
     @FXML
     void start(ActionEvent event) {
         Node node = (Node) event.getSource();
