@@ -12,6 +12,9 @@ import javax.mail.MessagingException;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
+ */
 public class ControllerUI {
 
     @FXML

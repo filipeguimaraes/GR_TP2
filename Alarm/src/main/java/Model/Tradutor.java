@@ -36,8 +36,8 @@ public class Tradutor {
             Matcher MEM2matcher = MEM2pattern.matcher(MEMaux);
             if (MEM2matcher.find()) {
                 return Double.parseDouble(MEM2matcher.group());
-            }else return null;
-        }else return null;
+            } else return null;
+        } else return null;
     }
 
 }
