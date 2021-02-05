@@ -9,7 +9,12 @@ public class Process {
     private final Double mem;
     private final Double cpu;
 
-
+    /**
+     * Construtor da classe.
+     *
+     * @param mem Percentagem de memória.
+     * @param cpu Percentagem de cpu.
+     */
     public Process(Double mem, Double cpu) {
         this.mem = mem;
         this.cpu = cpu;

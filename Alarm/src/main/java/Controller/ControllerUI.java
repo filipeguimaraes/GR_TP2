@@ -13,6 +13,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
+ * Controlador da aplicação.
+ *
  * @author Filipe Miguel Teixeira Freitas Guimarães - A865308
  */
 public class ControllerUI {
@@ -36,6 +38,9 @@ public class ControllerUI {
     @FXML
     private Button apply;
 
+    /**
+     * Aplica as definições introduzidas.
+     */
     @FXML
     void applySettings() {
         try {
@@ -54,6 +59,11 @@ public class ControllerUI {
         }
     }
 
+    /**
+     * Começa a aplicação.
+     *
+     * @param event Usado para abrir o selecionador de arquivos.
+     */
     @FXML
     void start(ActionEvent event) {
         Node node = (Node) event.getSource();

@@ -7,10 +7,9 @@
     <list default="true" id="4ce35b81-7f6a-4469-8a8d-63f98a51255a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Alarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Email.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Process.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Tradutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Tradutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analyse/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +122,7 @@
       <workItem from="1612310184772" duration="1148000" />
       <workItem from="1612366057536" duration="3026000" />
       <workItem from="1612374714722" duration="11706000" />
-      <workItem from="1612440359829" duration="12534000" />
+      <workItem from="1612440359829" duration="13046000" />
     </task>
     <servers />
   </component>
