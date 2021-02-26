@@ -1,8 +1,15 @@
+Controller/ControllerMain.class
+Controller/ControllerUI.class
 MainFX.class
 Main.class
 Model/Process.class
 Model/Tradutor.class
+Controller/ControllerCPU.class
 Model/Estado.class
+Controller/ControllerMem.class
 Model/Agregador.class
+Model/ProcessGroup.class
+Controller/ControllerUI$1.class
+Controller/ControllerInfo.class
 Model/Log.class
 MainFX$1.class

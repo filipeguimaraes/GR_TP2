@@ -1,10 +1,9 @@
-Model/ByCommand.class
 Model/Email$1.class
 Model/Email.class
 Controller/ControllerUI.class
+Model/Alarm.class
 MainFX.class
 Main.class
 Model/Process.class
 Model/Tradutor.class
-Model/Log.class
 MainFX$1.class
