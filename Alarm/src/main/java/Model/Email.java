@@ -55,7 +55,7 @@ public class Email {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication("gr.gvr.2021@gmail.com",
-                        "a7$%^$`5+&Q^_NJT");
+                        "a7$'?%^$`5+&dQ^_3eNJT");
             }
         });
 
